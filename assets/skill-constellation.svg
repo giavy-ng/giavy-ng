@@ -1,0 +1,102 @@
+<svg width="100%" height="auto" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Analytics Constellation — Analytics at the intersection of Data Analysis and Business Analytics">
+
+  <defs>
+    <!-- soft glow for the center node and the traveling pulse -->
+    <filter id="ac-glow" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- wide soft halo for star-like ambience -->
+    <filter id="ac-halo" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <!-- fading stroke used on satellite connector lines -->
+    <linearGradient id="ac-fade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#7CC4FF" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#7CC4FF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7CC4FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ============ FAINT BASE ARC (closes the shape, barely visible) ============ -->
+  <path d="M300,250 Q590,296 880,240" fill="none" stroke="#7CC4FF" stroke-width="1" opacity="0.04"/>
+
+  <!-- ============ SATELLITE NODES + CONNECTORS ============ -->
+  <g>
+    <line x1="160" y1="115" x2="300" y2="250" stroke="url(#ac-fade)" stroke-width="1"/>
+    <line x1="515" y1="35"  x2="430" y2="60"  stroke="url(#ac-fade)" stroke-width="1"/>
+    <line x1="985" y1="145" x2="880" y2="240" stroke="url(#ac-fade)" stroke-width="1"/>
+    <line x1="455" y1="235" x2="585" y2="155" stroke="url(#ac-fade)" stroke-width="1"/>
+
+    <g fill="#7CC4FF">
+      <circle cx="160"  cy="115" r="2.5" opacity="0.42"/>
+      <circle cx="215"  cy="195" r="2"   opacity="0.36"/>
+      <circle cx="515"  cy="35"  r="2.5" opacity="0.40"/>
+      <circle cx="700"  cy="75"  r="2"   opacity="0.34"/>
+      <circle cx="985"  cy="145" r="2.5" opacity="0.42"/>
+      <circle cx="1045" cy="225" r="2"   opacity="0.34"/>
+      <circle cx="455"  cy="235" r="3"   opacity="0.44"/>
+      <circle cx="760"  cy="195" r="2"   opacity="0.34"/>
+    </g>
+  </g>
+
+  <!-- ============ CORE CONNECTIONS ============ -->
+  <g fill="none" stroke="#7CC4FF" stroke-width="1" opacity="0.26">
+    <path d="M430,60 Q510,105 585,155"/>
+    <path d="M585,155 Q450,205 300,250"/>
+    <path d="M585,155 Q735,200 880,240"/>
+  </g>
+
+  <!-- invisible path the pulse travels along (same curve as the two upper/right connections) -->
+  <path id="ac-pulsepath" d="M430,60 Q510,105 585,155 Q735,200 880,240" fill="none" stroke="none"/>
+
+  <!-- ============ SECONDARY NODES ============ -->
+  <g>
+    <!-- Analytics & BI -->
+    <circle cx="430" cy="60" r="9" fill="#7CC4FF" opacity="0.19" filter="url(#ac-halo)"/>
+    <circle cx="430" cy="60" r="5" fill="#7CC4FF" opacity="0.65"/>
+
+    <!-- Data Analysis -->
+    <circle cx="300" cy="250" r="9" fill="#7CC4FF" opacity="0.19" filter="url(#ac-halo)"/>
+    <circle cx="300" cy="250" r="5" fill="#7CC4FF" opacity="0.65"/>
+
+    <!-- Business Analytics -->
+    <circle cx="880" cy="240" r="9" fill="#7CC4FF" opacity="0.19" filter="url(#ac-halo)"/>
+    <circle cx="880" cy="240" r="5" fill="#7CC4FF" opacity="0.65"/>
+  </g>
+
+  <!-- ============ CENTER NODE — ANALYTICS ============ -->
+  <g>
+    <circle cx="585" cy="155" r="16" fill="#7CC4FF" opacity="0.24" filter="url(#ac-halo)"/>
+    <circle cx="585" cy="155" r="8" fill="#EAF3FF" filter="url(#ac-glow)"/>
+  </g>
+
+  <!-- ============ THE PULSE — travels Analytics & BI -> Analytics -> Business Analytics ============ -->
+  <circle r="3.4" fill="#EAF3FF" filter="url(#ac-glow)">
+    <animateMotion dur="9s" repeatCount="indefinite" calcMode="spline"
+      keyPoints="0;1;1" keyTimes="0;0.722;1" keySplines="0.42 0 0.58 1;0 0 1 1">
+      <mpath href="#ac-pulsepath" xlink:href="#ac-pulsepath"/>
+    </animateMotion>
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite"
+      values="0;0.9;0.9;0;0" keyTimes="0;0.08;0.64;0.722;1"/>
+  </circle>
+
+  <!-- ============ TYPOGRAPHY ============ -->
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+
+  <text x="585" y="191" text-anchor="middle" font-size="18" font-weight="600" letter-spacing="2px" fill="#5D7FA5">ANALYTICS</text>
+
+  <text x="430" y="38" text-anchor="middle" font-size="12" font-weight="500" letter-spacing="1.5px" fill="#6F8FB2">ANALYTICS &amp; BI</text>
+
+  <text x="300" y="274" text-anchor="middle" font-size="12" font-weight="500" letter-spacing="1.5px" fill="#6F8FB2">DATA ANALYSIS</text>
+
+  <text x="880" y="264" text-anchor="middle" font-size="12" font-weight="500" letter-spacing="1.5px" fill="#6F8FB2">BUSINESS ANALYTICS</text>
+
+  </g>
+
+</svg>
