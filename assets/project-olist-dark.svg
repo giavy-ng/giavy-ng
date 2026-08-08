@@ -1,0 +1,35 @@
+<svg width="100%" height="auto" viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Customer Dissatisfaction Analysis">
+<defs><style>
+text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.id { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; fill: #7CC4FF; opacity: 0.88; }
+.title { font-size: 19.5px; font-weight: 700; fill: #D6E2F0; }
+.desc { font-size: 9.75px; font-weight: 400; fill: #9FB3C8; }
+.tech { font-size: 9.25px; font-weight: 400; fill: #9FB3C8; }
+.tech-dot { font-size: 9.25px; font-weight: 700; fill: #7CC4FF; }
+.cta { font-size: 9.25px; font-weight: 700; letter-spacing: 1.3px; fill: #D6E2F0; }
+</style></defs>
+
+<rect x="0.5" y="0.5" width="479" height="259" rx="15" fill="none" stroke="#7CC4FF" stroke-opacity="0.16" stroke-width="1"/>
+
+<path d="M 388.0 30.0 Q 409.8 39.0 428.0 24.0 Q 430.4 48.4 410.0 62.0" fill="none" stroke="#7CC4FF" stroke-width="0.9" stroke-linecap="round" opacity="0.40"/>
+
+<g fill="#7CC4FF" opacity="0.28">
+<circle cx="452.0" cy="45.0" r="1.4"/>
+</g>
+
+<g fill="#7CC4FF" opacity="0.85">
+<circle cx="388.0" cy="30.0" r="2.6"/>
+<circle cx="428.0" cy="24.0" r="3.0"/>
+<circle cx="410.0" cy="62.0" r="2.4"/>
+</g>
+
+<text x="19" y="27" class="id">01 / OLIST</text>
+<text x="19" y="52" class="title">Customer</text>
+  <text x="19" y="74" class="title">Dissatisfaction Analysis</text>
+<text x="19" y="94" class="desc">Uncovering operational drivers behind customer dissatisfaction.</text>
+
+<text x="19" y="132" font-size="9.75"><tspan class="tech-dot">99K+</tspan><tspan class="tech" dx="5">Orders</tspan><tspan class="tech-dot" dx="10">·</tspan><tspan class="tech-dot" dx="10">14.7%</tspan><tspan class="tech" dx="5">Negative Reviews</tspan></text>
+
+<text x="19" y="192" font-size="9.25"><tspan class="tech">SQL</tspan><tspan class="tech-dot" dx="8">·</tspan><tspan class="tech" dx="8">Python</tspan><tspan class="tech-dot" dx="8">·</tspan><tspan class="tech" dx="8">Power BI</tspan></text>
+<text x="461" y="192" class="cta" text-anchor="end">VIEW PROJECT &#8599;</text>
+</svg>

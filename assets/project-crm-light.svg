@@ -1,0 +1,114 @@
+<svg width="100%" height="auto" viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sales Pipeline Dashboard">
+<defs>
+<style>
+text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+/* Light theme */
+.id {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  fill: #1769AA;
+}
+
+.title {
+  font-size: 19.5px;
+  font-weight: 700;
+  fill: #172B3A;
+}
+
+.desc {
+  font-size: 9.75px;
+  font-weight: 400;
+  fill: #405466;
+}
+
+.tech {
+  font-size: 9.25px;
+  font-weight: 400;
+  fill: #405466;
+}
+
+.tech-dot {
+  font-size: 9.25px;
+  font-weight: 700;
+  fill: #1769AA;
+}
+
+.cta {
+  font-size: 9.25px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  fill: #172B3A;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .id {
+    fill: #7CC4FF;
+  }
+
+  .title {
+    fill: #D6E2F0;
+  }
+
+  .desc,
+  .tech {
+    fill: #B7C7D8;
+  }
+
+  .tech-dot {
+    fill: #7CC4FF;
+  }
+
+  .cta {
+    fill: #D6E2F0;
+  }
+}
+</style>
+</defs>
+
+<rect x="0.5" y="0.5" width="479" height="259" rx="15" fill="none" stroke="#7CC4FF" stroke-opacity="0.16" stroke-width="1"/>
+
+<path d="M 378.0 24.0 Q 393.7 36.5 413.0 42.0 Q 429.3 56.7 450.0 64.0"
+fill="none"
+stroke="#7CC4FF"
+stroke-width="0.9"
+stroke-linecap="round"
+opacity="0.40"/>
+
+<g fill="#7CC4FF" opacity="0.28">
+  <circle cx="370.0" cy="68.0" r="1.4"/>
+</g>
+
+<g fill="#7CC4FF" opacity="0.85">
+  <circle cx="378.0" cy="24.0" r="3.2"/>
+  <circle cx="413.0" cy="42.0" r="2.6"/>
+  <circle cx="450.0" cy="64.0" r="2.0"/>
+</g>
+
+<text x="19" y="27" class="id">02 / CRM</text>
+
+<text x="19" y="52" class="title">Sales Pipeline</text>
+<text x="19" y="74" class="title">Dashboard</text>
+
+<text x="19" y="94" class="desc">Exploring funnel performance, pipeline value, and customer outcomes.</text>
+
+<text x="19" y="132" font-size="9.75">
+  <tspan class="tech-dot">3K+</tspan>
+  <tspan class="tech" dx="5">Leads</tspan>
+  <tspan class="tech-dot" dx="10">·</tspan>
+  <tspan class="tech" dx="10">Sales Funnel</tspan>
+</text>
+
+<text x="19" y="192" font-size="9.25">
+  <tspan class="tech">SQL</tspan>
+  <tspan class="tech-dot" dx="8">·</tspan>
+  <tspan class="tech" dx="8">Power BI</tspan>
+  <tspan class="tech-dot" dx="8">·</tspan>
+  <tspan class="tech" dx="8">DAX</tspan>
+</text>
+
+<text x="461" y="192" class="cta" text-anchor="end">VIEW PROJECT &#8599;</text>
+
+</svg>
