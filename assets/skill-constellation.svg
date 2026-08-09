@@ -89,7 +89,7 @@
   <!-- ============ TYPOGRAPHY ============ -->
   <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
 
-  <text x="585" y="191" text-anchor="middle" font-size="18" font-weight="600" letter-spacing="2px" fill="#5D7FA5">ANALYTICS</text>
+  <text x="595" y="191" text-anchor="middle" font-size="18" font-weight="600" letter-spacing="2px" fill="#5D7FA5">SKILLS</text>
 
   <text x="430" y="38" text-anchor="middle" font-size="12" font-weight="500" letter-spacing="1.5px" fill="#6F8FB2">ANALYTICS &amp; BI</text>
 
