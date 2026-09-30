@@ -102,8 +102,23 @@ analytics_professional:
         srcset="./assets/project-olist-light.svg">
       <img
         src="./assets/project-olist-light.svg"
-        width="48%"
+        width="31.5%"
         alt="Olist Customer Dissatisfaction Analysis">
+    </picture>
+  </a>
+
+  <a href="https://github.com/giavy-ng/workforce-performance-retention-analytics">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="./assets/project-hr-dark.svg">
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="./assets/project-hr-light.svg">
+      <img
+        src="./assets/project-hr-light.svg"
+        width="31.5%"
+        alt="Workforce Performance & Attrition Analytics">
     </picture>
   </a>
 
@@ -117,10 +132,11 @@ analytics_professional:
         srcset="./assets/project-crm-light.svg">
       <img
         src="./assets/project-crm-light.svg"
-        width="48%"
+        width="31.5%"
         alt="CRM Sales Pipeline Dashboard">
     </picture>
   </a>
+
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"
