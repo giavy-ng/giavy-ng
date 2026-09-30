@@ -31,6 +31,6 @@ text { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-s
 
 <text x="19" y="168" font-size="9.75"><tspan class="tech-dot">3K+</tspan><tspan class="tech" dx="5">Leads</tspan><tspan class="tech-dot" dx="10">·</tspan><tspan class="tech" dx="10">Sales Funnel</tspan></text>
 
-<text x="19" y="230" font-size="9.25"><tspan class="tech">SQL</tspan><tspan class="tech-dot" dx="8">·</tspan><tspan class="tech" dx="8">Power BI</tspan><tspan class="tech-dot" dx="8">·</tspan><tspan class="tech" dx="8">DAX</tspan></text>
+<text x="19" y="230" font-size="9.25"><tspan class="tech">Excel</tspan><tspan class="tech-dot" dx="8">·</tspan><tspan class="tech" dx="8">Power BI</tspan><tspan class="tech-dot" dx="8">·</tspan><tspan class="tech" dx="8">DAX</tspan></text>
 <text x="301" y="230" class="cta" text-anchor="end">VIEW PROJECT &#8599;</text>
 </svg>
